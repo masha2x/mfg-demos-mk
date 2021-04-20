@@ -1,5 +1,5 @@
 view: test_1_customer {
-  sql_table_name: [mfg_demos_mk.test_1_customer]
+  sql_table_name: mfg_demos_mk.test_1_customer
     ;;
 
   dimension: age {
@@ -19,7 +19,6 @@ view: test_1_customer {
 
   measure: count {
     type: count
-    approximate_threshold: 100000
     drill_fields: [firstname, lastname]
   }
 }
